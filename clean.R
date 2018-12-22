@@ -12,13 +12,14 @@ meanOzone <- mean(clean_data$Ozone, na.rm=TRUE)
 
 #print the mean -for debugging
 meanOzone
-clean_data$Ozone[is.na(clean_data$Ozone)] <- m
 
-str(clean_data)
+#assign the meanOzone value to any 'NA' value (i.e., not defined value)
+clean_data$Ozone[is.na(clean_data$Ozone)] <- meanOzone
 
-#remove other NAs
+#remove any remaining rows that have NAs
 clean_data <- na.omit(clean_data)
 
+#view the structure of the input dataframe
 
 str(clean_data)
 
