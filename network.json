@@ -34,6 +34,16 @@
             ],
             "source": "clean.R",
             "target": "OzoneHist.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "hist",
+                    "type": "png"
+                }
+            ],
+            "source": "OzoneHist.R",
+            "target": "hist.png"
         }
     ],
     "nodes": [
@@ -56,6 +66,6 @@
             "name": "hist.png"
         }
     ],
-    "updated_at": "2018-12-22 12:39:04",
+    "updated_at": "2018-12-22 12:39:22",
     "url": "https://github.com/fall2018-saltz/toce_example"
 }
