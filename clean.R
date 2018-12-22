@@ -10,7 +10,7 @@ clean_data <- raw_data
 meanOzone <- mean(clean_data$Ozone, na.rm=TRUE)
 
 #print the mean -for debugging
-meanOzone
+paste("mean ozone:", meanOzone)
 
 #assign the meanOzone value to any 'NA' value (i.e., not defined value)
 clean_data$Ozone[is.na(clean_data$Ozone)] <- meanOzone
