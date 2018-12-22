@@ -13,6 +13,7 @@ str(tmp_data)
 tmp_data <- na.omit(tmp_data)
 
 #define output dataset
+clean_data <- tmp_data
 str(clean_data)
 
 
