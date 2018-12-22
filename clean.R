@@ -21,6 +21,7 @@ clean_data <- na.omit(clean_data)
 #view the structure of the input dataframe
 
 str(clean_data)
+cleanDF <- clean_data
 
 
 
