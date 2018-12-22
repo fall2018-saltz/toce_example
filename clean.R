@@ -11,6 +11,8 @@ str(tmp_data)
 
 #remove other NAs
 tmp_data <- na.omit(tmp_data)
+
+#define output dataset
 str(clean_data)
 
 
