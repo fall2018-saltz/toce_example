@@ -8,8 +8,10 @@ clean_data <- tmp_data
 #
 #replace any missing ozone values with the mean of ozone
 #   First, get the mean of all valid ozone values
-m <- mean(clean_data$Ozone, na.rm=TRUE)
-m
+meanOzone <- mean(clean_data$Ozone, na.rm=TRUE)
+
+#print the mean -for debugging
+meanOzone
 clean_data$Ozone[is.na(clean_data$Ozone)] <- m
 
 str(clean_data)
