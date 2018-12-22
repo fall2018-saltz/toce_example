@@ -4,7 +4,7 @@ str(raw_data)
 
 #replace missing ozone value with the mean
 tmp_data <- raw_data
-m <- mean(tmp_data$Ozone)
+m <- mean(tmp_data$Ozone, na.rm=TRUE)
 m
 tmp_data$Ozone[is.na(tmp_data$Ozone)] <- m
 
