@@ -7,8 +7,10 @@ tmp_data <- raw_data
 m <- mean(tmp_data$Ozone)
 tmp_data$Ozone[is.na(tmp_data$Ozone] <- m
 
+str(tmp_data)
+
 #remove other NAs
-clean_data <- na.omit(raw_data)
+tmp_data <- na.omit(tmp_data)
 str(clean_data)
 
 
