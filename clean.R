@@ -3,9 +3,8 @@
 str(raw_data)
 
 #define output dataset, initially just the input dataset
-clean_data <- tmp_data
+clean_data <- raw_data
 
-#
 #replace any missing ozone values with the mean of ozone
 #   First, get the mean of all valid ozone values
 meanOzone <- mean(clean_data$Ozone, na.rm=TRUE)
